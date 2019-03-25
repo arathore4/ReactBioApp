@@ -30,10 +30,17 @@ class App extends Component {
 
         return (
             <div>
-                <div style={{display: 'flex',flexDirection: 'row', alignItems:'left'}}>
-                    <p> &#10094; Abhishek Rathore  &#10095;</p>
+                <div style={{backgroundColor: '#E5B802', marginBottom:10}}>
+                <div style={{display: 'flex'}}>
+                    <p style={{ margin:20 }}> &#10094; Abhishek Rathore  &#10095;</p>
+                    <div style={{position: 'absolute', right: 0, margin:20 }}>
+                        <a href='a' style={{margin:5, color: '#0013D1'}}>About</a>
+                        <a href='a' style={{margin:5, color: '#0013D1'}}>Experience</a>
+                        <a href='a' style={{margin:5, color: '#0013D1'}}>Projects</a>
+                        <a href='a' style={{margin:5, color: '#0013D1'}}>Skills</a>
+                    </div>
                 </div>
-                <hr/>
+                </div>
                 <img src={profileImg} alt='profile' className="profile" />
                 <h1>Hello!!</h1>
                 <p>My Name is Abhihek</p>
@@ -53,7 +60,7 @@ class App extends Component {
 
                 <hr />
                 <Projects />
-                <hr />
+                <hr style={{height:1, background:'#E5B802'}} />
                 <SocialProfiles />
             </div>
         )
