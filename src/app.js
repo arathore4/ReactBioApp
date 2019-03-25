@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import profileImg from './assets/profileImage.PNG';
 
 class App extends Component {
 
@@ -29,6 +30,11 @@ class App extends Component {
 
         return (
             <div>
+                <div style={{display: 'flex',flexDirection: 'row', alignItems:'left'}}>
+                    <p> &#10094; Abhishek Rathore  &#10095;</p>
+                </div>
+                <hr/>
+                <img src={profileImg} alt='profile' className="profile" />
                 <h1>Hello!!</h1>
                 <p>My Name is Abhihek</p>
                 { 
